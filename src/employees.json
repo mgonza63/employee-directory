@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "John",
+      "occupation": "Lead Engineer"
+    },
+    {
+      "id": 2,
+      "name": "Mauricio",
+      "occupation": "Frontend Developer"
+    },
+    {
+      "id": 3,
+      "name": "Calvin",
+      "occupation": "Backend Developer"
+    },
+    {
+      "id": 4,
+      "name": "Dexter",
+      "occupation": "Product Manager"
+    },
+    {
+      "id": 5,
+      "name": "Courage",
+      "occupation": "A Cowardly Dog"
+    }
+]

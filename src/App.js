@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import EmployeeCard from "./components/EmployeeCard";
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
+import employees from "./employees.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  // Setting this.state.friends to the friends json array
+  state = {
+    employees
+  };
+
+  // Map over this.state.friends and render a FriendCard component for each friend object
+  render() {
+    return (
+      <Wrapper>
+        <Title>Employee List</Title>
+        {this.state.employees.map(employee => (
+          <EmployeeCard
+            id={employee.id}
+            key={employee.id}
+            name={employee.name}
+            occupation={employee.occupation}
+          />
+        ))}
+      </Wrapper>
+    );
+  }
 }
 
 export default App;
