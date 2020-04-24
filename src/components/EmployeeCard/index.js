@@ -3,8 +3,8 @@ import "./style.css";
 
 function EmployeeCard(props) {
   return (
-    <div className="card">
-      <div className="content">
+    <div className="list-group">
+      <div className="list-group-item">
         <ul>
           <li>
             <strong>Name:</strong> {props.name}
