@@ -2,26 +2,36 @@
     {
       "id": 1,
       "name": "John",
-      "occupation": "Lead Engineer"
+      "occupation": "Lead Engineer",
+      "age": "35",
+      "gender": "Male"
     },
     {
       "id": 2,
       "name": "Mauricio",
-      "occupation": "Frontend Developer"
+      "occupation": "Frontend Developer",
+      "age": "20",
+      "gender": "Male"
+    },
+    {
+      "id": 5,
+      "name": "Jane",
+      "occupation": "A Cowardly Dog",
+      "age": "35",
+      "gender": "Female"
     },
     {
       "id": 3,
       "name": "Calvin",
-      "occupation": "Backend Developer"
+      "occupation": "Backend Developer",
+      "age": "34",
+      "gender": "Male"
     },
     {
       "id": 4,
-      "name": "Dexter",
-      "occupation": "Product Manager"
-    },
-    {
-      "id": 5,
-      "name": "Courage",
-      "occupation": "A Cowardly Dog"
+      "name": "Anna",
+      "occupation": "Product Manager",
+      "age": "29",
+      "gender": "Female"
     }
 ]
