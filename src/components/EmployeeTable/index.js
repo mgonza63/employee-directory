@@ -5,7 +5,9 @@ export default function EmployeeTable(props) {
         <table>
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th>
+                        <button onClick={() => props.sortBy('name')}></button>
+                        Name</th>
                     <th>Occupation</th>
                     <th>Age</th>
                     <th>Gender</th>
