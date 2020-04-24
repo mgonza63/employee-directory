@@ -5,12 +5,10 @@ export default function EmployeeTable(props) {
         <table>
             <thead>
                 <tr>
-                    <th>
-                        <button onClick={() => props.sortBy('name')}></button>
-                        Name</th>
-                    <th>Occupation</th>
-                    <th>Age</th>
-                    <th>Gender</th>
+                    <th onClick={() => props.sortBy('name')}>Name ↕️</th>   
+                    <th onClick={() => props.sortBy('occupation')}>Occupation ↕️</th>
+                    <th onClick={() => props.sortBy('age')}>Age ↕️</th>
+                    <th onClick={() => props.sortBy('gender')}>Gender ↕️</th>
                 </tr>
             </thead>
             <tbody>
