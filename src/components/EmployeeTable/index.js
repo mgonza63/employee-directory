@@ -12,7 +12,16 @@ export default function EmployeeTable(props) {
                 </tr>
             </thead>
             <tbody>
-
+                {
+                    props.employees.map( row => (
+                        <tr>
+                            <td>{row.name}</td>
+                            <td>{row.occupation}</td>
+                            <td>{row.age}</td>
+                            <td>{row.gender}</td>
+                        </tr>
+                    ))
+                }
             </tbody>
         </table>
     )
