@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function EmployeeTable(props) {
     return (
-        <table>
+        <table class="u-full-width">
             <thead>
                 <tr>
-                    <th onClick={() => props.sortBy('name')}>Name ↕️</th>   
-                    <th onClick={() => props.sortBy('occupation')}>Occupation ↕️</th>
-                    <th onClick={() => props.sortBy('age')}>Age ↕️</th>
-                    <th onClick={() => props.sortBy('gender')}>Gender ↕️</th>
+                    <th onClick={() => props.sortBy('name')}>Name <span role="img" aria-labelledby="name">↕️</span></th>   
+                    <th onClick={() => props.sortBy('occupation')}>Occupation <span role="img" aria-labelledby="occupation">↕️</span></th>
+                    <th onClick={() => props.sortBy('age')}>Age <span role="img" aria-labelledby="age">↕️</span></th>
+                    <th onClick={() => props.sortBy('gender')}>Gender <span role="img" aria-labelledby="gender">↕️</span></th>
                 </tr>
             </thead>
             <tbody>

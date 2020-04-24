@@ -1,8 +1,9 @@
-import React from ('react');
+import React from 'react';
 
-function Input(props) {
-    return <input>{props.children}</input>;
+export default function Input(props) {
+    return (
+    <input placeholder="Employee Name">{props.children}</input>
+    )
   }
-  
-  export default Input;
+
 

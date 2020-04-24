@@ -1,6 +1,9 @@
 import React from "react";
 import employees from "./employees.json";
 import EmployeeTable from "./components/EmployeeTable"
+import Title from "./components/Title"
+import Input from "./components/Input"
+
 import { render } from "react-dom";
 
 
@@ -34,6 +37,8 @@ class App extends React.Component {
   render() {
   return (
     <div className="u-full-width">
+      <Title>Company Employees</Title>
+      <Input></Input>
       <EmployeeTable 
         employees={this.state.employees}
          sortBy={this.sortBy}
