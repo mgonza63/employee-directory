@@ -16,7 +16,7 @@ export default function EmployeeTable(props) {
             <tbody>
                 {
                     props.employees.map( row => (
-                        <tr>
+                        <tr key={row.id}>
                             <td>{row.name}</td>
                             <td>{row.occupation}</td>
                             <td>{row.age}</td>
