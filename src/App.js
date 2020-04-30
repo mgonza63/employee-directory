@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import employees from "./employees.json";
 import EmployeeTable from "./components/EmployeeTable"
 import Title from "./components/Title"
@@ -7,14 +7,17 @@ import Input from "./components/Input"
 import { render } from "react-dom";
 
 
+
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+
       employees: employees,
       direction: {
         name: 'asc'
-      }
+      },
+      searchEmployee: ''
     } 
     // bind 'this' to the constructor
     this.sortBy = this.sortBy.bind(this)
@@ -34,11 +37,16 @@ class App extends React.Component {
     })
   }
 
+  handleInput = (e) => {
+    console.log(e.target.value)
+    this.setState({ searchEmployee: e.target.value })
+  }
+
   render() {
   return (
     <div className="u-full-width">
       <Title>Company Employees</Title>
-      <Input></Input>
+      <Input handleInput={ this.handleInput }></Input>
       <EmployeeTable 
         employees={this.state.employees}
          sortBy={this.sortBy}

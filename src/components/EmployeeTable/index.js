@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function EmployeeTable(props) {
     return (
-        <table class="u-full-width">
+        <table className="u-full-width">
             <thead>
                 <tr>
                     <th onClick={() => props.sortBy('name')}>Name <span role="img" aria-labelledby="name">↕️</span></th>   
