@@ -38,7 +38,7 @@ class App extends React.Component {
   }
 
   handleInput = (e) => {
-    console.log(e.target.value)
+    // console.log(e.target.value)
     this.setState({ searchEmployee: e.target.value })
   }
 
