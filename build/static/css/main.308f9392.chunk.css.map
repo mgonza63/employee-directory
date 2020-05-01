@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,OACE,UAAW,CACX,iBAAkB,CAClB,cACF,CAJA,MAEI,WAAkC,CAAlC,+BAAkC,CAClC,SAAU,CACV,UACJ","file":"main.308f9392.chunk.css","sourcesContent":["input {\n    border: none;\n    border-bottom: 1px solid lightgrey;\n    width: 50%;\n    padding: 1%;\n}"]}
