@@ -43,12 +43,17 @@ class App extends React.Component {
   }
 
   render() {
+
+    let filteredEmployees = this.state.employees.filter((employee) => {
+      return employee.name.toLowerCase().includes(this.state.searchEmployee.toLowerCase())
+    })
+
   return (
     <div className="u-full-width">
       <Title>Company Employees</Title>
       <Input handleInput={ this.handleInput }></Input>
       <EmployeeTable 
-        employees={this.state.employees}
+        filteredEmployees={filteredEmployees}
          sortBy={this.sortBy}
       />
     </div>

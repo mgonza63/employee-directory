@@ -13,7 +13,7 @@ export default function EmployeeTable(props) {
             </thead>
             <tbody>
                 {
-                    props.employees.map( row => (
+                    props.filteredEmployees.map( (row) => (
                         <tr key={row.id}>
                             <td>{row.name}</td>
                             <td>{row.occupation}</td>
